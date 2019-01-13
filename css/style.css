@@ -1,0 +1,376 @@
+:root{
+  --main: #DCC650;
+  --accent: #FFD806;
+  --bg1: #F5F5F5;
+  --bg2: #EBEBEB;
+}
+
+body, h1, h2, h3, h4, p, div, img, a{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: nunito;
+  background-color: #F5F5F5;
+}
+
+header{
+  text-transform: uppercase;
+  width: 100%;
+  margin: auto;
+  padding: 2em 0;
+}
+
+header h1{
+  font-size: 0.8em;
+  font-weight: 900;
+  float: left;
+  line-height: 32px;
+}
+
+h1 .subtitle:first-child{
+  padding-left: 2em;
+}
+
+h2{
+  font-size: 0.8em;
+}
+
+header h2{
+  float: right;
+  line-height: 32px;
+}
+
+.subtitle{
+  font-weight: 300;
+}
+
+.separator{
+  color: var(--main);
+}
+
+h3{
+  color: #333333;
+  font-family: 'roboto slab';
+  font-weight: 700;
+  font-size: .6em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+h4{
+  color: #747474;
+  font-family: nunito, arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+h4 a:hover{
+  color: var(--main);
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: var(--main);
+  text-decoration-style: solid;
+  transition: 300ms ease-out;
+}
+
+p{
+  color: #747474;
+  font-family: nunito;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+a{
+  color: #747474;
+  text-decoration: none;
+}
+
+
+
+.container{
+  max-width: 900px;
+  margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: 50px 345px 345px 345px 50px; */
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "i i i i i i w w w w w w"
+        "i i i i i i p p p v v v"
+        "a a a d d d d d d b b b"
+        "f f f f f f f f f f f f";
+}
+
+.header{
+  grid-area: h;
+  height: 0;
+  /* background-color: pink; */
+  /* padding-bottom: 10%; */
+}
+
+.intro{
+  grid-area: i;
+  background-color: var(--main);
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.intro .content{
+  padding: 40px;
+}
+
+.intro-text{
+  color: #333333;
+  font-family: nunito;
+  font-weight: 900;
+  font-size: 1.9em;
+  line-height: 1.2em;
+  padding-top: .3em;
+}
+
+/* ---------- START wooded grid------------------- */
+.wooded{
+  position: relative;
+  grid-area: w;
+  background-color: olivedrab;
+  overflow: hidden;
+}
+
+.wooded a{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 48.9%;
+  background-color: red;
+}
+
+.wooded a img{
+  position:absolute;
+  left:0;
+  top: 0;
+  /* width: 100%; */
+  height: 100%;
+  -webkit-transition: opacity 600ms ease-in-out;
+  -moz-transition: opacity 600ms ease-in-out;
+  -o-transition: opacity 600ms ease-in-out;
+  transition: opacity 600ms ease-in-out;
+}
+
+.wooded img.base:hover{
+  opacity: 0;
+}
+
+.wooded a:hover{
+  /* background-image: url("../img/coWooded@2x.jpg"); */
+}
+/* ---------- END wooded grid------------- */
+
+/* ---------- START prairie grid------------- */
+.prairie{
+  position: relative;
+  grid-area: p;
+  background-color: olive;
+  overflow: hidden;
+}
+
+.prairie a{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: red;
+}
+
+.prairie a img{
+  position:absolute;
+  left:0;
+  top: 0;
+  /* width: 100%; */
+  height: 100%;
+  -webkit-transition: opacity 600ms ease-in-out;
+  -moz-transition: opacity 600ms ease-in-out;
+  -o-transition: opacity 600ms ease-in-out;
+  transition: opacity 600ms ease-in-out;
+}
+
+.prairie img.base:hover{
+  opacity: 0;
+}
+/* ---------- END prairie grid------------- */
+
+.video .content, .about .content{
+  padding: 20px;
+}
+
+.video{
+  grid-area: v;
+  background-color: var(--bg2);
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.about{
+  grid-area: a;
+  background-color: var(--bg2);
+  height: 0;
+  padding-bottom: 100%;
+}
+
+/* ---------- START detention grid------------- */
+.detention{
+  position: relative;
+  grid-area: d;
+  background-color: yellowgreen;
+  overflow: hidden;
+}
+
+.detention a{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 48.9%;
+  background-color: red;
+}
+
+.detention a img{
+  position:absolute;
+  left:0;
+  top: 0;
+  /* width: 100%; */
+  height: 100%;
+  -webkit-transition: opacity 600ms ease-in-out;
+  -moz-transition: opacity 600ms ease-in-out;
+  -o-transition: opacity 600ms ease-in-out;
+  transition: opacity 600ms ease-in-out;
+}
+
+.detention img.base:hover{
+  opacity: 0;
+}
+
+/* ---------- END detention grid------------- */
+
+
+/* ---------- START berm grid------------- */
+.berm{
+  position: relative;
+  grid-area: b;
+  background-color: limegreen;
+  overflow: hidden;
+}
+
+.berm a{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: red;
+}
+
+.berm a img{
+  position:absolute;
+  left:0;
+  top: 0;
+  /* width: 100%; */
+  height: 100%;
+  -webkit-transition: opacity 600ms ease-in-out;
+  -moz-transition: opacity 600ms ease-in-out;
+  -o-transition: opacity 600ms ease-in-out;
+  transition: opacity 600ms ease-in-out;
+}
+
+.berm img.base:hover{
+  opacity: 0;
+}
+/* ---------- END berm grid------------- */
+
+.footer{
+  grid-area: f;
+  /* background-color: pink; */
+  height: 0;
+  padding-bottom: 10%;
+}
+
+footer p{
+  float: left;
+  font-size: 0.9em;
+  line-height: 1em;
+}
+
+footer h2{
+  float: right;
+  line-height: 1em;
+}
+
+footer a:hover{
+  color: var(--main);
+  transition: 400ms ease-in;
+}
+
+.sig{
+  font-size: 1.7em;
+  font-family: 'reenie beanie';
+}
+
+@media screen and (max-width: 950px){
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+
+  .grid{
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "i i i i i i i i i i i i"
+      "w w w w w w w w w w w w"
+      "p p p p p p v v v v v v"
+      "d d d d d d d d d d d d"
+      "a a a a a a b b b b b b"
+      "f f f f f f f f f f f f";
+  }
+
+  .subtitle{
+    display: none;
+  }
+
+  .about .content, .video .content{
+    padding: 10%;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+  .intro .content{
+    padding: 10%;
+  }
+  .intro-text{
+    font-size: 1.2em;
+  }
+  h3{
+    font-size: .5em;
+  }
+  h4{
+    font-size: 1em;
+  }
+  p{
+    font-size: .7em;
+  }
+  footer{
+    font-size: .8em;
+  }
+}
