@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;900&family=Reenie+Beanie&family=Roboto+Slab:wght@700&display=swap');
+
 :root{
   --main: #DCC650;
   --accent: #FFD806;
@@ -140,7 +142,7 @@ a{
 .wooded{
   position: relative;
   grid-area: w;
-  background-color: olivedrab;
+  /* background-color: olivedrab; */
   overflow: hidden;
 }
 
@@ -150,7 +152,7 @@ a{
   width: 100%;
   height: 0;
   padding-bottom: 48.9%;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .wooded a img{
@@ -178,7 +180,7 @@ a{
 .prairie{
   position: relative;
   grid-area: p;
-  background-color: olive;
+  /* background-color: olive; */
   overflow: hidden;
 }
 
@@ -188,7 +190,7 @@ a{
   width: 100%;
   height: 0;
   padding-bottom: 100%;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .prairie a img{
@@ -240,7 +242,7 @@ a{
   width: 100%;
   height: 0;
   padding-bottom: 48.9%;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .detention a img{
@@ -276,7 +278,7 @@ a{
   width: 100%;
   height: 0;
   padding-bottom: 100%;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .berm a img{
