@@ -1,29 +1,20 @@
-const slider = document.querySelector('#slider');
+const slider = document.querySelector("#slider");
 const foregroungImg = document.querySelector(".foreground-img");
 
+resetSliderPos();
 
 //link & assign slider value to foreground image width
-slider.addEventListener('input', event =>{
-    const sliderPos = event.target.value;
-    console.log(event.target.value);
+slider.addEventListener("input", (event) => {
+  const sliderPos = event.target.value;
+  console.log(event.target.value);
 
-    foregroungImg.style.width = `${sliderPos}%`;
-})
+  foregroungImg.style.width = `${sliderPos}%`;
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function resetSliderPos() {
+  slider.value = 50;
+  foregroungImg.style.width = `${slider.value}%`;
+}
 
 // //select DOM element
 // const imageComparisonContainers = document.querySelector(".slider-container");
